@@ -1,0 +1,275 @@
+[{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd50"
+  },
+  "Name": "Activision",
+  "Domain": "activision.com",
+  "BreachDate": "2022-12-04",
+  "ModifiedDate": "2023-10-03T07:09:49Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Activision.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd51"
+  },
+  "Name": "ActMobile",
+  "Domain": "actmobile.com",
+  "BreachDate": "2021-10-08",
+  "ModifiedDate": "2021-11-09T07:55:03Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/ActMobile.png",
+  "IsVerified": false
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd52"
+  },
+  "Name": "AcneOrg",
+  "Domain": "acne.org",
+  "BreachDate": "2014-11-25",
+  "ModifiedDate": "2016-03-06T11:07:41Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/AcneOrg.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd53"
+  },
+  "Name": "Adapt",
+  "Domain": "adapt.io",
+  "BreachDate": "2018-11-05",
+  "ModifiedDate": "2018-11-22T19:43:06Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Adapt.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd54"
+  },
+  "Name": "Adobe",
+  "Domain": "adobe.com",
+  "BreachDate": "2013-10-04",
+  "ModifiedDate": "2022-05-15T23:52:49Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Adobe.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd55"
+  },
+  "Name": "AmartFurniture",
+  "Domain": "amartfurniture.com.au",
+  "BreachDate": "2022-05-16",
+  "ModifiedDate": "2022-05-25T23:43:23Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/AmartFurniture.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd56"
+  },
+  "Name": "Aipai",
+  "Domain": "aipai.com",
+  "BreachDate": "2016-09-27",
+  "ModifiedDate": "2016-11-07T21:55:29Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Aipai.png",
+  "IsVerified": false
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd57"
+  },
+  "Name": "AndroidForums",
+  "Domain": "androidforums.com",
+  "BreachDate": "2011-10-30",
+  "ModifiedDate": "2020-08-07T23:29:01Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/AndroidForums.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd58"
+  },
+  "Name": "AnimalJam",
+  "Domain": "animaljam.com",
+  "BreachDate": "2020-10-12",
+  "ModifiedDate": "2020-11-12T01:18:50Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/AnimalJam.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd59"
+  },
+  "Name": "ArmorGames",
+  "Domain": "armorgames.com",
+  "BreachDate": "2019-01-01",
+  "ModifiedDate": "2021-04-07T06:28:50Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/ArmorGames.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd5a"
+  },
+  "Name": "Badoo",
+  "Domain": "badoo.com",
+  "BreachDate": "2013-06-01",
+  "ModifiedDate": "2016-07-06T08:16:03Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Badoo.png",
+  "IsVerified": false
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd5b"
+  },
+  "Name": "BitcoinTalk",
+  "Domain": "bitcointalk.org",
+  "BreachDate": "2015-05-22",
+  "ModifiedDate": "2017-03-27T23:45:41Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/BitcoinTalk.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd5c"
+  },
+  "Name": "Canva",
+  "Domain": "canva.com",
+  "BreachDate": "2019-05-24",
+  "ModifiedDate": "2019-08-09T14:24:01Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Canva.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd5d"
+  },
+  "Name": "CapialEconomics",
+  "Domain": "capitaleconomics.com",
+  "BreachDate": "2020-12-12",
+  "ModifiedDate": "2022-07-04T08:16:36Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/CapialEconomics.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd5e"
+  },
+  "Name": "CivilOnline",
+  "Domain": "co188.com",
+  "BreachDate": "2011-07-10",
+  "ModifiedDate": "2016-11-07T20:41:52Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/CivilOnline.png",
+  "IsVerified": false
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd5f"
+  },
+  "Name": "Dodonew",
+  "Domain": "dodonew.com",
+  "BreachDate": "2011-12-01",
+  "ModifiedDate": "2016-11-10T00:26:01Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Dodonew.png",
+  "IsVerified": false
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd60"
+  },
+  "Name": "Facebook",
+  "Domain": "facebook.com",
+  "BreachDate": "2019-08-01",
+  "ModifiedDate": "2021-04-06T09:09:21Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Facebook.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd61"
+  },
+  "Name": "Snapchat",
+  "Domain": "snapchat.com",
+  "BreachDate": "2014-01-01",
+  "ModifiedDate": "2014-01-02T00:00:00Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Snapchat.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd62"
+  },
+  "Name": "Sony",
+  "Domain": "sony.com",
+  "BreachDate": "2011-06-02",
+  "ModifiedDate": "2013-12-04T00:00:00Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Sony.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd63"
+  },
+  "Name": "StockX",
+  "Domain": "stockx.com",
+  "BreachDate": "2019-07-26",
+  "ModifiedDate": "2019-08-11T04:12:11Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/StockX.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd64"
+  },
+  "Name": "Twitter",
+  "Domain": "twitter.com",
+  "BreachDate": "2022-01-01",
+  "ModifiedDate": "2022-08-13T02:40:49Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Twitter.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd65"
+  },
+  "Name": "VivaAir",
+  "Domain": "vivaair.com",
+  "BreachDate": "2022-03-14",
+  "ModifiedDate": "2023-09-11T07:11:30Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/VivaAir.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd66"
+  },
+  "Name": "Wendys",
+  "Domain": "wendys.com.ph",
+  "BreachDate": "2018-03-31",
+  "ModifiedDate": "2022-05-24T23:50:35Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Wendys.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd67"
+  },
+  "Name": "Xbox360ISO",
+  "Domain": "xbox360iso.com",
+  "BreachDate": "2015-09-25",
+  "ModifiedDate": "2017-01-29T07:20:52Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Xbox360ISO.png",
+  "IsVerified": true
+},
+{
+  "_id": {
+    "$oid": "65cd3e21385ae885be90cd68"
+  },
+  "Name": "Yahoo",
+  "Domain": "yahoo.com",
+  "BreachDate": "2012-07-11",
+  "ModifiedDate": "2013-12-04T00:00:00Z",
+  "LogoPath": "https://haveibeenpwned.com/Content/Images/PwnedLogos/Yahoo.png",
+  "IsVerified": true
+}]
