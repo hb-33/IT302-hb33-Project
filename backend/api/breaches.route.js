@@ -2,7 +2,7 @@
 
 import express from 'express'
 import BreachesController from './breaches.controller.js'
-import AnalysesControlelr from './analyses.controller.js'
+import AnalysesController from './analyses.controller.js'
 
 const router = express.Router()
 
