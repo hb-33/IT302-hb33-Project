@@ -4,7 +4,7 @@ import AnalysesDAO from '../dao/analysesDAO.js'
 
 export default class AnalysesController {
 
-  static async apiPostReview(req,res,next) {
+  static async apiPostAnalysis(req,res,next) {
     try {
       const breachId = req.body.breach_id
       const analysis = req.body.analysis

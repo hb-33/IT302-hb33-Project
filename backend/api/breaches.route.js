@@ -8,9 +8,9 @@ const router = express.Router()
 
 router.route('/').get(BreachesController.apiGetBreaches)
 
-router.route('/analyses')
-    .post(AnalysesController.apiPostAnalyses)
-    .put(AnalysesController.apiUpdateReview)
-    .delete(AnalysesController.apiDeleteReview)
+router.route('/analysis')
+    .post(AnalysesController.apiPostAnalysis)
+    .put(AnalysesController.apiUpdateAnalysis)
+    .delete(AnalysesController.apiDeleteAnalysis)
 
 export default router
