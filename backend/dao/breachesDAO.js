@@ -7,7 +7,7 @@ export default class BreachesDAO {
     if (breaches) {
       return
     } try {
-      breaches = await conn.db(process.env.BREACHES_NS).collection('breaches_hb33')
+      breaches = await conn.db(process.env.BREACHANALYSES_NS).collection('breaches_hb33')
     } catch(e) {
       console.error(`unable to connect in BreachesDAO: ${e}`)
     }
