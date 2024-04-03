@@ -1,7 +1,9 @@
+//Harshit Bansal, 4/12/24, IT302-002, Phase 4 Assignment: Read Node.js Data using React.js, hb33@njit.edu
+
 import React, {useState, useEffect} from 'react'
 import BreachDataService from '../service/breachesDataService'
 import { useParams } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
@@ -17,6 +19,7 @@ const Breach = (user) => {
     id: null,
     Name: "",
     Domain:"",
+    analyses: []
   })
  let { id } = useParams();
  const getBreach = id => {
@@ -38,19 +41,24 @@ return (
     <Container>
       <Row>
       <Col>
-      <Image src={breach.LogoPath} fluid className = "Imge"/>
+        <Image src={breach.LogoPath} fluid className="Imge1"/>
       </Col>
-      <Col>
-      <Card>
-      <Card.Header as="h5">{breach.Name}</Card.Header>
-      <Card.Body>
-      <Card.Text>
-      {breach.BreachDate}
-      </Card.Text>
-      {user}
-      </Card.Body>
-      </Card>
-      </Col>
+        <Col>
+          <Card>
+            <Card.Header as="h5">{breach.Name}</Card.Header>
+            <Card.Body>
+            <Card.Text>
+            {"Breach Date: "+ breach.BreachDate}
+            <br></br>
+            {"Is this breach verified: "+ breach.IsVerified}
+            </Card.Text>
+            {user &&
+              <Link to={"/breaches/" + id + "/analysis"}>
+                Add Analysis
+              </Link>}
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </Container>
 
