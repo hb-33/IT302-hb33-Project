@@ -1,6 +1,8 @@
+//Harshit Bansal, 4/12/24, IT302-002, Phase 4 Assignment: Read Node.js Data using React.js, hb33@njit.edu
+
 import React, { useState, useEffect } from 'react'
 import BreachDataService from "../service/breachesDataService"
-//import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -15,11 +17,8 @@ const BreachesList = () => {
   const [breaches, setBreaches] = useState([]);
   const [searchName, setSearchName] = useState("");
   const [searchDomain, setSearchDomain] = useState("");
-  //const [searchRating, setSearchRating] = useState("");
-  //const [ratings, setRatings] = useState(["All Ratings"]);
   useEffect(() => {
     retrieveBreaches();
-    //retrieveRatings();
   }, []);
 
 
@@ -32,32 +31,8 @@ const BreachesList = () => {
       .catch((e) => {
         console.log(e);
       });
- /*const retrieveRatings = () => {
-    MovieDataService.getRatings()
-      .then((response) => {
-        console.log(response.data);
-        //start with 'All Ratings' if user doesn't specify any ratings
-        setRatings(["All Ratings"].concat(response.data));
-      })
-      .catch(e => {
-        console.log(e);
-      });
   };
-  */
-  };
-  /*
-  const retrieveRatings = () => {
-    MovieDataService.getRatings()
-      .then((response) => {
-        console.log(response.data);
-        //start with 'All Ratings' if user doesn't specify any ratings
-        setRatings(["All Ratings"].concat(response.data));
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  };
-  */
+
   const onChangeSearchName = (e) => {
     const searchName = e.target.value
     setSearchName(searchName);
@@ -140,6 +115,7 @@ const findByDomain =
                     <Card.Title>{breach.Name}</Card.Title>
                     <Card.Title>{breach.Domain}</Card.Title>
                     <Card.Text>{"Breach Date: " + breach.BreachDate}</Card.Text>
+                    <Link to={"/breaches/" + breach._id} >View Analyses</Link>
                   </Card.Body>
                 </Card>
               </Col>

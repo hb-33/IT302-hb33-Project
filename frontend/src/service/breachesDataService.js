@@ -1,3 +1,5 @@
+//Harshit Bansal, 4/12/24, IT302-002, Phase 4 Assignment: Read Node.js Data using React.js, hb33@njit.edu
+
 import axios from "axios";
 
 class BreachDataService {
@@ -26,25 +28,18 @@ class BreachDataService {
     )
   }
 
-  /*
-  createReview(data) {
-    return axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/v1/movies/review`, data)
+  createAnalysis(data) {
+    return axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/v1/hb33/breaches/analysis`, data)
   }
 
-  updateReview(data) {
-    return axios.put(`${process.env.REACT_APP_BACKEND_URL}/api/v1/movies/review`, data)
+  updateAnalysis(data) {
+    return axios.put(`${process.env.REACT_APP_BACKEND_URL}/api/v1/hb33/breaches/analysis`, data)
   }
-  deleteReview(id, userId) {
+  deleteAnalysis(id, userId) {
     return axios.delete(
-      `${process.env.REACT_APP_BACKEND_URL}/api/v1/movies/review`,
-      { data: { review_id: id, user_id: userId } }
+      `${process.env.REACT_APP_BACKEND_URL}/api/v1/hb33/breaches/analysis`,
+      { data: { analysis_id: id, user_id: userId } }
     )
   }
-
-  getRatings() {
-    return axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/v1/movies/ratings`)
-
-  }
-  */
 }
 export default new BreachDataService();
