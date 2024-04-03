@@ -1,4 +1,7 @@
-//Harshit Bansal, 3/22/24, IT302-002, Phase 3 Assignment: C.U.D. MongoDB data using Node.js, hb33@njit.edu
+//Harshit Bansal, 4/12/24, IT302-002, Phase 4 Assignment: Read Node.js Data using React.js, hb33@njit.edu
+
+import mongodb from "mongodb"
+const ObjectId = mongodb.ObjectId
 
 let breaches
 
@@ -42,6 +45,30 @@ export default class BreachesDAO {
       console.error(`Unable to issue find command, ${e}`)
       console.error(e)
       return { breachesList: [], totalNumBreaches: 0 }
+    }
+  }
+
+  static async getBreachById(id) {
+    try {
+      return await breaches.aggregate([
+        {
+          $match: {
+            _id: new ObjectId(id),
+          }
+        },
+        { $lookup:
+          {
+            from: 'analyses',
+            localField: '_id',
+            foreignField: 'breach_id',
+            as: 'analyses'
+          }
+        }
+      ]).next()
+    }
+    catch(e) {
+      console.error(`something went wrong in getBreachById: ${e}`)
+      throw e
     }
   }
 }

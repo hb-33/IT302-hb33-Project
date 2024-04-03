@@ -1,4 +1,4 @@
-//Harshit Bansal, 3/22/24, IT302-002, Phase 3 Assignment: C.U.D. MongoDB data using Node.js, hb33@njit.edu
+//Harshit Bansal, 4/12/24, IT302-002, Phase 4 Assignment: Read Node.js Data using React.js, hb33@njit.edu
 
 import BreachesDAO from '../dao/breachesDAO.js'
 
@@ -26,4 +26,19 @@ export default class BreachesController {
     }
     res.json(response)
    }
+
+   static async apiGetBreachById(req, res, next) {
+    try {
+      let id = req.params.id || {}
+      let breach = await BreachesDAO.getBreachById(id)
+      if(!breach) {
+        res.status(404).json({ error: "not found"})
+        return
+      }
+      res.json(breach)
+    } catch(e) {
+        console.log(`api, ${e}`)
+        res.status(500).json({error: e})
+      }
+    }
 }
