@@ -1,10 +1,10 @@
-//Harshit Bansal, 4/12/24, IT302-002, Phase 4 Assignment: Read Node.js Data using React.js, hb33@njit.edu
+//Harshit Bansal, 4/26/24, IT302-002, Phase 5 Assignment: CUD Node.js Data using React.js, hb33@njit.edu
 
 import React, {useState, useEffect} from 'react'
 import BreachDataService from '../service/breachesDataService'
-import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
@@ -13,7 +13,7 @@ import Row from 'react-bootstrap/Row';
 
 import './component.css';
 
-const Breach = (user) => {
+const Breach = (props) => {
 
   const [breach, setBreach] = useState({
     id: null,
@@ -36,6 +36,22 @@ useEffect( () => {
   getBreach(id)
     },[id])
 
+  const deleteAnalysis = (analysisId, index) => {
+    BreachDataService.deleteAnalysis(analysisId, props.user.id)
+      .then(response => {
+        setBreach((prevState) => {
+          prevState.analyses.splice(index, 1)
+          return ({
+            ...prevState
+          })
+        })
+      })
+      .catch(e => {
+        console.log(e)
+      })
+  }
+
+
 return (
     <div>
     <Container>
@@ -52,12 +68,34 @@ return (
             <br></br>
             {"Is this breach verified: "+ breach.IsVerified}
             </Card.Text>
-            {user &&
+            {props.user &&
               <Link to={"/breaches/" + id + "/analysis"}>
                 Add Analysis
               </Link>}
             </Card.Body>
           </Card>
+          <br></br>
+          <h2>Analyses</h2>
+          <br></br>
+          {breach.analyses.map((analysis, index) => {
+            return (
+              <Card key={index}>
+                <Card.Body>
+                  <h5>{analysis.name + " reviewed on " + new Date(Date.parse(analysis.date)).toDateString()}</h5>
+                  <p>{analysis.analysis}</p>
+                  {props.user && props.user.id === analysis.user_id &&
+                    <Row>
+                      <Col><Link
+                        to={"/breaches/" + id + "/analysis"}
+                        state={{ currentAnalysis: analysis }}
+                      >Edit</Link>
+                      </Col>
+                      <Col><Button variant="link" onClick={() => deleteAnalysis(analysis._id, index)}>Delete</Button></Col>
+                    </Row>}
+                </Card.Body>
+              </Card>
+            )
+          })}
         </Col>
       </Row>
     </Container>
